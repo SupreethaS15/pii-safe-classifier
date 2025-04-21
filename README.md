@@ -78,3 +78,19 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
 3. In body select raw JSON and provide a raw email text as `{"email_body":"string"}`
 4. Send the request in order to get the API response
 5. Other Equivalent method can be using curl.
+
+
+
+---
+
+## Acknowledgements
+
+Built with ❤️ using open-source tools like [FastAPI](https://fastapi.tiangolo.com/), [SBERT](https://www.sbert.net/), and [SpaCy](https://spacy.io/).  
+Deployed on [Hugging Face Spaces](https://huggingface.co/spaces) using Docker SDK.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** – you're free to use, modify, and distribute.
+
