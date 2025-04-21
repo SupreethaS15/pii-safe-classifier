@@ -38,14 +38,14 @@ Use Swagger UI or curl to test live requests.
 ---
 ## 📚 Module Documentation
 Module | Purpose
-`app.py` | Hugging Face Spaces entry point; exposes FastAPI app instance from api.py.
-`api.py` | FastAPI route /classify for processing incoming emails: masks PII, classifies, and demasks.
-`models.py` | Contains SBERT_SVM_Classifier class: training, saving, loading, and predicting using SBERT + SVM.
-`utils.py` | Implements mask_pii() and demask() using advanced regex and SpaCy for secure entity handling.
-`requirements.txt` | Python dependencies required to run the application (locally or in Hugging Face Space).
-`Dockerfile` | Containerization file to deploy the API using Hugging Face's Docker SDK or locally with Docker.
-`README.md` | Complete setup guide, documentation, deployment steps, and test instructions.
-`sbert_linear_model.joblib` | Serialized classifier model file (must be pre-trained and included for prediction).
+1.`app.py` | Hugging Face Spaces entry point; exposes FastAPI app instance from api.py.
+2.`api.py` | FastAPI route /classify for processing incoming emails: masks PII, classifies, and demasks.
+3.`models.py` | Contains SBERT_SVM_Classifier class: training, saving, loading, and predicting using SBERT + SVM.
+4.`utils.py` | Implements mask_pii() and demask() using advanced regex and SpaCy for secure entity handling.
+5.`requirements.txt` | Python dependencies required to run the application (locally or in Hugging Face Space).
+6.`Dockerfile` | Containerization file to deploy the API using Hugging Face's Docker SDK or locally with Docker.
+7.`README.md` | Complete setup guide, documentation, deployment steps, and test instructions.
+8.`sbert_linear_model.joblib` | Serialized classifier model file (must be pre-trained and included for prediction).
 
 ## ⚙️ How It Works
 
