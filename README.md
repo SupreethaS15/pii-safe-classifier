@@ -85,7 +85,7 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
 
 ## Acknowledgements
 
-Built with ❤️ using open-source tools like [FastAPI](https://fastapi.tiangolo.com/), [SBERT](https://www.sbert.net/), and [SpaCy](https://spacy.io/).  
+Built with using open-source tools like [FastAPI](https://fastapi.tiangolo.com/), [SBERT](https://www.sbert.net/), and [SpaCy](https://spacy.io/).  
 Deployed on [Hugging Face Spaces](https://huggingface.co/spaces) using Docker SDK.
 
 ---
