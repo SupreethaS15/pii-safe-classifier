@@ -15,6 +15,38 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
 
 ---
 
+## 🔌 API Overview
+**Framework**: FastAPI
+**Main file**: api.py
+**Model**: SBERT encoder + Linear SVM loaded via models.py
+**PII masking**: Done in utils.py using regex & SpaCy
+**Entry point**: app.py (used for Hugging Face Spaces or Docker)
+
+---
+## ☁️ Hugging Face Spaces Deployment
+1.Create a Space and choose Docker as the SDK.
+2.Upload all project files:
+   `app.py, api.py, models.py, utils.py`
+   `requirements.txt`
+   `Dockerfile`
+   `README.md`
+   `sbert_linear_model.joblib`
+Space will build automatically and give the following link:
+https://<space-name>.hf.space/docs
+Use Swagger UI or curl to test live requests.
+
+---
+## 📚 Module Documentation
+Module | Purpose
+`app.py` | Hugging Face Spaces entry point; exposes FastAPI app instance from api.py.
+`api.py` | FastAPI route /classify for processing incoming emails: masks PII, classifies, and demasks.
+`models.py` | Contains SBERT_SVM_Classifier class: training, saving, loading, and predicting using SBERT + SVM.
+`utils.py` | Implements mask_pii() and demask() using advanced regex and SpaCy for secure entity handling.
+`requirements.txt` | Python dependencies required to run the application (locally or in Hugging Face Space).
+`Dockerfile` | Containerization file to deploy the API using Hugging Face's Docker SDK or locally with Docker.
+`README.md` | Complete setup guide, documentation, deployment steps, and test instructions.
+`sbert_linear_model.joblib` | Serialized classifier model file (must be pre-trained and included for prediction).
+
 ## ⚙️ How It Works
 
 1. Accepts raw email text (`email_body`)
@@ -37,6 +69,6 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
 ## Other Evaluation methods
 1. Use this url "https://supreetha15-pii-safe-classifier.hf.space/classify"
 2. Go to POSTMAN and set request to POST
-3. In body select raw and type as JSON and provide a raw email text as {"email_body":"string"}
+3. In body select raw JSON and provide a raw email text as {"email_body":"string"}
 4. Send the request in order to get the API response
 5. Other Equivalent method can be using curl.
