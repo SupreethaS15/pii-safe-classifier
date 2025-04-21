@@ -17,9 +17,13 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
 
 ## 🔌 API Overview
 **Framework**: FastAPI
+
 **Main file**: api.py
+
 **Model**: SBERT encoder + Linear SVM loaded via models.py
+
 **PII masking**: Done in utils.py using regex & SpaCy
+
 **Entry point**: app.py (used for Hugging Face Spaces or Docker)
 
 ---
