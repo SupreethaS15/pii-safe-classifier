@@ -32,7 +32,7 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
    `README.md`
    `sbert_linear_model.joblib`
 Space will build automatically and give the following link:
-https://<space-name>.hf.space/docs
+`https://<space-name>.hf.space/docs`
 Use Swagger UI or curl to test live requests.
 
 ---
@@ -69,12 +69,12 @@ Use Swagger UI or curl to test live requests.
 1. Use this url "https://supreetha15-pii-safe-classifier.hf.space/docs"
 2. This will redirect to Swagger UI.
 3. Use POST and the route by default will be /classify.
-4. Check on Try Out to to evaluate the API bu giving a raw email text in email_body
+4. Check on Try Out to to evaluate the API bu giving a raw email text in `email_body`
 5. Click execute to run the API and fetch the result.
 
 ## Other Evaluation methods
-1. Use this url "https://supreetha15-pii-safe-classifier.hf.space/classify"
-2. Go to POSTMAN and set request to POST
-3. In body select raw JSON and provide a raw email text as {"email_body":"string"}
+1. Use this url `"https://supreetha15-pii-safe-classifier.hf.space/classify"`
+2. Go to POSTMAN and set request to `POST`
+3. In body select raw JSON and provide a raw email text as `{"email_body":"string"}`
 4. Send the request in order to get the API response
 5. Other Equivalent method can be using curl.
