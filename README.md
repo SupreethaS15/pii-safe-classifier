@@ -16,15 +16,15 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
 ---
 
 ## 🔌 API Overview
-**Framework**: FastAPI
+**Framework**: `FastAPI`
 
-**Main file**: api.py
+**Main file**: `api.py`
 
-**Model**: SBERT encoder + Linear SVM loaded via models.py
+**Model**: `SBERT encoder + Linear SVM loaded via models.py`
 
-**PII masking**: Done in utils.py using regex & SpaCy
+**PII masking**: Done in `utils.py` using regex & SpaCy
 
-**Entry point**: app.py (used for Hugging Face Spaces or Docker)
+**Entry point**: `app.py` (used for Hugging Face Spaces or Docker)
 
 ---
 ## ☁️ Hugging Face Spaces Deployment
