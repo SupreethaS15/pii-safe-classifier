@@ -53,6 +53,19 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
    
    8.`sbert_linear_model.joblib` - Serialized classifier model file (must be pre-trained and included for prediction).
 
+---
+## API End Point Details 
+`POST /classify`
+Content-Type: `application/json`
+
+Body Schema:
+`
+{
+  "email_body": "string"
+}`
+
+---
+
 ## ⚙️ How It Works
 
 1. Accepts raw email text (`email_body`)
