@@ -24,8 +24,8 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
 
 ---
 ## ☁️ Hugging Face Spaces Deployment
-- 1.Create a Space and choose Docker as the SDK.
-- 2.Upload all project files:
+- Create a Space and choose Docker as the SDK.
+- Upload all project files:
    `app.py, api.py, models.py, utils.py`
    `requirements.txt`
    `Dockerfile`
