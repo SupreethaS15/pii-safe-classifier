@@ -16,28 +16,24 @@ A FastAPI backend that classifies support emails using `SBERT + SVM`, while safe
 ---
 
 ## 🔌 API Overview
-**Framework**: `FastAPI`
-
-**Main file**: `api.py`
-
-**Model**: `SBERT encoder + Linear SVM loaded via models.py`
-
-**PII masking**: Done in `utils.py` using regex & SpaCy
-
-**Entry point**: `app.py` (used for Hugging Face Spaces or Docker)
+- **Framework**: `FastAPI`
+- **Main file**: `api.py`
+- **Model**: `SBERT encoder + Linear SVM loaded via models.py`
+- **PII masking**: Done in `utils.py` using regex & SpaCy
+- **Entry point**: `app.py` (used for Hugging Face Spaces or Docker)
 
 ---
 ## ☁️ Hugging Face Spaces Deployment
-1.Create a Space and choose Docker as the SDK.
-2.Upload all project files:
+- 1.Create a Space and choose Docker as the SDK.
+- 2.Upload all project files:
    `app.py, api.py, models.py, utils.py`
    `requirements.txt`
    `Dockerfile`
    `README.md`
    `sbert_linear_model.joblib`
-Space will build automatically and give the following link:
-`https://<space-name>.hf.space/docs`
-Use Swagger UI or curl to test live requests.
+- Space will build automatically and give the following link:
+- `https://<space-name>.hf.space/docs`
+- Use Swagger UI or curl to test live requests.
 
 ---
 ## 📚 Module Documentation
